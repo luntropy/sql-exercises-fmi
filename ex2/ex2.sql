@@ -26,11 +26,11 @@ UNION
 EXCEPT
 (SELECT p.maker FROM product p, pc WHERE p.model = pc.model);
 
-SELECT DISTINCT pc.hd FROM pc, pc as p WHERE pc.hd = p.hd AND pc.code != p.code;
+SELECT DISTINCT pc.hd FROM pc, pc p WHERE pc.hd = p.hd AND pc.code != p.code;
 
-SELECT pc.model, p.model FROM pc, pc as p WHERE pc.speed = p.speed AND pc.ram = p.ram AND pc.model < p.model;
+SELECT pc.model, p.model FROM pc, pc p WHERE pc.speed = p.speed AND pc.ram = p.ram AND pc.model < p.model;
 
-SELECT DISTINCT p.maker FROM product p, pc, pc as sp WHERE pc.speed >= 400 and p.model = pc.model AND p.model = sp.model AND pc.code != sp.code;
+SELECT DISTINCT p.maker FROM product p, pc, pc sp WHERE pc.speed >= 400 and p.model = pc.model AND p.model = sp.model AND pc.code != sp.code;
 
 -- Database 'ships'
 
