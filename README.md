@@ -1,1 +1,1 @@
-# sql-exercises
+# SQL Exercises, FMI Course
