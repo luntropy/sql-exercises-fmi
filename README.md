@@ -1,1 +1,2 @@
-# SQL Exercises, FMI Course
+# FMI Databases Course
+- PostgreSQL
